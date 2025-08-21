@@ -1,0 +1,18 @@
+def luz():
+    estado = False
+    print("(presiona Enter para cambiar, escribe 'salir' para terminar)")
+    
+    while True:
+        comando = input("Presiona Enter para cambiar estado, o escribe 'salir': ")
+        
+        if comando.lower() == "salir":
+            print("Programa terminado")
+            break
+
+        estado = not estado
+        
+        if estado:
+            print("La luz está ENCENDIDA")
+        else:
+            print("La luz está APAGADA")
+luz()
